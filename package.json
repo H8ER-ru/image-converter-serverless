@@ -1,10 +1,13 @@
 {
+  "homepage": "https://h8er-ru.github.io/image-converter-serverless",
   "name": "image-converter",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
@@ -31,6 +34,7 @@
     "@vue/tsconfig": "^0.1.3",
     "eslint": "^8.34.0",
     "eslint-plugin-vue": "^9.9.0",
+    "gh-pages": "^5.0.0",
     "jsdom": "^21.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
