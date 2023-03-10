@@ -12,6 +12,7 @@ import {ref, defineEmits} from "vue";
 
 const emit = defineEmits(['input'])
 
+// @ts-ignore
 const input = ref<HTMLInputElement>(null)
 
 const choiceFiles = (e: Event) => {
@@ -20,6 +21,7 @@ const choiceFiles = (e: Event) => {
 }
 
 const inputChange = (event: any) => {
+  // @ts-ignore
   const filesArray = Object.values(event.target.files)
   emit('input', filesArray)
 }
