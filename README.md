@@ -6,11 +6,10 @@ node 16
 simple image converter using `canvas` and `imageBitmap`
 
 ### todo list
-[x] select image types
-[x] select quality between 0 and 1
-[ ] write tests
-[ ] pwa and work offile
-
+- [x] select image types
+- [x] select quality between 0 and 1
+- [ ] write tests
+- [ ] pwa and work offile
 
 ## Project Setup
 
