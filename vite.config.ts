@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/image-converter-serverless/",
+  base: "/",
   plugins: [vue()],
   resolve: {
     alias: {
